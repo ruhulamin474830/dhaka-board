@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhaka Education Board</title> 
+    <link rel="shortcut icon" href="board/logo.png" type="image/x-icon">
+<style>
+    
+*{
+    padding: 0;
+    margin: 0;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #5e841f;
+    border-bottom:2px solid hsl(83, 77%, 61%) ;    
+    color: #fff;   
+}
+.kkk{ border: 2px solid #fff; padding: 5px; border-radius: 10px;}
+.header-img{
+    height: 100px;
+}
+.news{
+    display: flex ;
+    background-color: #5e841f ;
+    color: #fff;
+    justify-content: space-between;
+    padding: 20px;
+}
+.mmm{ padding-left: 20px;}
+.nnn{ padding-right: 20px;}
+.menu{
+    display: flex;
+    list-style: none;
+   font-size: 20px; 
+}
+.menu li {
+    padding:10px 30px;
+}
+.menu li a{
+    text-decoration: none;
+}
+.menu li:hover{ 
+    background-color: #98d13d;
+
+}
+.left-side{
+    
+    width: 25%;
+    background-color: rgba(165, 165, 165, 0.5);  
+}
+.chairman{
+    background-color: #fff;
+    margin: 5px;
+    border-top: 3px solid rgb(37, 37, 229);
+    text-align: center;
+    color: #a1a0a0;
+}
+.chairman img{
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid rgb(112, 110, 110);
+    margin: 10px;
+}
+.chairman p{
+    
+    padding: 10px;
+}
+.right-side{
+    
+    width: 75%;
+    
+}
+.main-body{
+    display: flex;
+}
+.online img{
+    width: 30px; 
+    background-color: #00A65A ; padding: 5px;
+}
+.online{ display: flex ;align-items: center;background-color: #fff ;margin: 10px;}
+.online p{padding-left:10px;color: blue; font-size: 18px; font-weight: bold;}
+.Examiner img{ background-color: #DD4B39;}
+.sim img{ background-color:#F39C12 ;}
+.half{
+    width: 47%;
+}
+.small{
+    display: flex;
+}
+.OEMS img { background-color: #00C0EF;}
+.white img{background-color: #fff;}
+.green img {background-color: #02A75C;}
+.Control{ background-color: #fff ;margin: 20px;padding: 5px;border-radius: 5px;}
+.Control h2{background-color: #609513; color: #fff; font-size: 24px;padding: 10px;border-radius: 5px;}
+.Control p {padding: 10px;}
+.big img{ width: 40px;}
+.box img {width: 120px;}
+.box{ 
+    border: 1px solid #ddd;
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 5px;
+
+    
+}
+.box p{ padding-bottom: 10px;}
+.box div{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.box div:hover{
+    background-color: #F6F9FF;
+}
+.box-aa{
+    display: flex;
+    justify-content: space-between;
+}
+.slider {
+position: relative;
+width: 600px;
+overflow: hidden;
+}
+
+.slides {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+width: 100%;
+height: auto;
+}
+
+button {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+border: none;
+padding: 10px;
+cursor: pointer;
+z-index: 100;
+}
+
+.prev {
+left: 0;
+}
+
+.next {
+right: 0;
+}
+.banner{ display: flex;}
+.notice{ width: 300px;}
+.latest{ 
+overflow: scroll;
+height: 300px;
+color: darkred;
+
+
+}
+.latest p:hover{
+text-decoration: underline;
+}
+body{
+width: 85%;
+margin: auto;
+background-color: #DAE9FF;
+}
+.bodycolor{
+background-color: #fff;
+}
+.footer{
+    background-color: #609513;
+    display: flex;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 2px solid #8AC007;
+}
+.footer div{
+    width: 45%;
+}
+.link p{
+    color: #000;
+}
+.copyright{
+    background-color: #608621;
+    padding: 20px;
+}
+.copyright span{ color: #fff; font-weight: 700;}
+</style>
+</head>
+<body>
+    <div class="bodycolor">
+    <div class="heading"> 
+        <div >
+
+         <img src="board/logog.gif" class="header-img" alt="">  
+        </div>
+        <div>
+            <h1> মাধ্যমিক ও উচ্চমাধ্যমিক শিক্ষা বোর্ড, ঢাকা</h1>
+            <h1>Board of Intermediate and Secondary Education, Dhaka</h1>
+        </div>
+        <div>
+            <p class="kkk">বাংলা</p>
+        </div>
+
+    </div>
+    <div class="news" >
+        <div>
+            <p class="nnn">খবর</p>
+        </div>
+        <div>   
+            <marquee behavior="" direction="">
+                <span> * খবর ১মাধ্যমিক ও উচ্চমাধ্যমিক শিক্ষা বোর্ড, ঢাকা </span>
+                <span> * খবর ২মাধ্যমিক ও উচ্চমাধ্যমিক শিক্ষা বোর্ড, ঢাকা</span>
+                <span> * খবর ৩মাধ্যমিক ও উচ্চমাধ্যমিক শিক্ষা বোর্ড, ঢাকা </span>
+                <span> * খবর ৪মাধ্যমিক ও উচ্চমাধ্যমিক শিক্ষা বোর্ড, ঢাকা </span>
+                <span> * খবর ৫ মাধ্যমিক ও উচ্চমাধ্যমিক শিক্ষা বোর্ড, ঢাকা</span>
+            </marquee>
+        </div>
+        <div>
+          <p class="mmm">All
+          </p>  
+        </div>
+        
+    </div>
+    <div>
+        <ul class="menu">
+            <li><a href=""> Home</a></li>
+            <li><a href=""> About Board</a></li>
+            <li><a href=""> Forms</a></li>
+            <li><a href=""> fees</a></li>
+            <li><a href=""> Result Archive</a></li>
+            <li><a href=""> XI Admission</a></li>
+            <li><a href=""> Contact Us</a></li>
+            <li><a href=""> Login</a></li>
+        </ul>
+    </div>
+    <div class="main-body">
+        <div class="left-side">
+            <div class="chairman">
+                <img src="board/chairman_2022.jpg" alt="">
+                <h3> প্রফেসর তপন কুমার সরকার </h3>
+                <p > Chairman </p>
+
+            </div>
+            <div class="online">
+                <img src="board/online2.png" alt="">
+                <p> On-line Application</p>
+            </div>
+            <div class="online Examiner">
+                <img src="board/Online Application.3d3937c3.svg" alt="">
+                <p>Examiner Recruitment</p>
+            </div>
+            <div class="online sim">
+                <img src="board/sim5g.png" alt="">
+                <p> EIIN SIM Application</p>
+            </div>
+           <div class="small">
+                <div class="online half OEMS">
+                    <img src="board/esif.png" alt="">
+                    <p> OEMS</p>
+                </div>
+                <div class="online half">
+                    <img src="board/esif.png" alt="">
+                    <p>e-TC</p>
+                </div>
+            </div>
+            <div class="small">
+            <div class="online half Examiner">
+                <img src="board/etif.png" alt="">
+                <p> e-TIF</p>
+            </div>
+            <div class="online half">
+                <img src="board/esif.png" alt="">
+                <p>e-SIF</p>
+            </div>
+           </div>
+            <div class="online half sim">
+                <img src="board/esif.png" alt="">
+                <p>e-FF</p>
+            </div>
+            <div class="online Examiner">
+                <img src="board/website.png" alt="">
+                <p>Institute Website</p>
+            </div>
+            <div class="online white">
+                <img src="board/esif.png" alt="">
+                <p>Result[JSC,SSC,HSC]</p>
+            </div>
+            <div class="online OEMS">
+                <img src="board/sonali_logo(1).jpg" alt="">
+                <p>Sonali Seba</p>
+            </div>
+            <div class="online OEMS">
+                <img src="board/sonali_logo.jpg" alt="">
+                <p>Sonali Seba Verify</p>
+            </div>
+            <div class="online green">
+                <img src="board/webmail.png" alt="">
+                <p>Web Mail</p>
+            </div>
+            <div class="online green">
+                <img src="board/center_information.png" alt="">
+                <p>Center Information</p>
+            </div>
+            <div class="online white">
+                <img src="board/333(1) - Copy.png" alt="">
+                <p>৩৩৩ (সরকারি তথ্য ও সেবা)</p>
+            </div>
+            <div class="online white">
+                <img src="board/999.png" alt="">
+                <p>৯৯৯ (জরুরি সেবা)</p>
+            </div>
+            <div class="online white">
+                <img src="board/109(1) - Copy.png" alt="">
+                <p>১০৯ (নারী ও শিশু নির্যাতন প্রতিরোধ)</p>
+            </div>
+            <div class="online white">
+                <img src="board/106(1) - Copy.png" alt="">
+                <p>১০৬ (দুদক)</p>
+            </div>
+            <div class="online white">
+                <img src="board/1090(1).png" alt="">
+                <p>১০৯০ (দুর্যোগের আগাম বার্তা)</p>
+            </div>
+            <div class = "Control">
+                <h2>Exam Control Room</h2>
+                <p>Phone: 029669815</p>
+                <p> Mobile: 01977733553</p>
+            </div>
+            <div class = "Control">
+                <h2>Social Communication</h2>
+            </div>
+                <div class="online white big">
+                    <img src="board/fb.png" alt="">
+                    <p> Facebook</p>
+                </div>
+                <div class="online white big">
+                    <img src="board/yt.png" alt="">
+                    <p>YouTube</p>
+                </div>
+                <div class="online white big">
+                    <img src="board/classroom.png" alt="">
+                    <p> Online Class</p>
+                </div>
+                <div class="online white big">
+                    <img src="board/kishor_batayon.jpg" alt="">
+                    <p> কিশোর বাতায়ন</p>
+                </div>
+        </div>
+        
+            <div class="right-side">
+            <div class="banner">
+                <div class="slider">
+                    <div class="slides">
+                        <img src="board/student.jpg" alt="Slide 1">
+                        <img src="board/student2.jpg" alt="Slide 2">
+                        <img src="board/dhaka_board.jpg" alt="Slide 3">
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+                <div class = "Control notice">
+                    <h2>Latest Notice</h2>   
+                    <div class="latest"> 
+                        <p>২৪-২০২৫ শিক্ষাবর্ষে একাদশ শ্রেণিতে অনলাইনের মাধ্যমে শিক্ষার্থী ভর্তির সময়সীমা পুুনরায় বৃদ্ধি ও ক্লাস শুরু প্রসঙ্গে।</p>
+                        <p>মাধ্যমিক ও উচ্চমাধ্যমিক শিক্ষা বোর্ড, ঢাকা এর আওতাধীন শিক্ষা প্রতিষ্ঠানে অধ্যয়নরত বৃত্তিপ্রাপ্ত শিক্ষার্থীদের বিনা বেতনে অধ্যয়নের সুযোগ লাভ সংক্রান্ত</p>
+                        <p>উচ্চমাধ্যমিক সার্টিফিকেট (HSC) পরীক্ষা ২০২৪-এর স্থগিত পরীক্ষাসমূহের সময়সূচি</p>
+                        <p>ট্রেজারি/থানায় সংরক্ষিত লিখিত উত্তরপত্র বোর্ডে জমাদানের তৃতীয় কিস্তি (০৩/০৮/২০২৪, শনিবার) এবং চতুর্থ কিস্তির তারিখ (১২/০৮/২০২৪, সোমবার) স্থগিত প্রসঙ্গে</p>
+                    </div>           
+                </div> 
+            </div>
+            <div class="box-aa">
+                <div class="box">
+                    <div>
+                        <p>জেএসসি কর্নার</p>
+                        <img src="board/jsc.jpg" alt="">
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <p>এসএসসি কর্নার</p>
+                        <img src="board/ssc.png" alt="">
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <p>এইচএসসি কর্নার</p>
+                        <img src="board/hsc.png" alt="">
+                    </div>
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="box-aa">
+                <div class="box">
+                    <div>
+                        <p>প্রশাসনিক আদেশ</p>
+                        <img src="board/order.png" alt="">
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <p>স্কুল সংক্রান্ত আদেশ</p>
+                        <img src="board/school.png" alt="">
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <p>কলেজ সংক্রান্ত আদেশ</p>
+                        <img src="board/college.png" alt="">
+                    </div>
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="box-aa">
+                <div class="box">
+                    <div>
+                        <p>সেবা প্রদান প্রতিশ্রুতি (সিটিজেন্‌স চার্টার)</p>
+                        <img src="board/service.png" alt="">
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <p>এসএসসি কর্নার</p>
+                        <img src="board/ssc.png" alt="">
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <p>এইচএসসি কর্নার</p>
+                        <img src="board/hsc.png" alt="">
+                    </div>
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="box-aa">
+                <div class="box">
+                    <div>
+                        <p>জেএসসি কর্নার</p>
+                        <img src="board/jsc.jpg" alt="">
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <p>এসএসসি কর্নার</p>
+                        <img src="board/ssc.png" alt="">
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <p>এইচএসসি কর্নার</p>
+                        <img src="board/hsc.png" alt="">
+                    </div>
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="box-aa">
+                <div class="box">
+                    <div>
+                        <p>জেএসসি কর্নার</p>
+                        <img src="board/jsc.jpg" alt="">
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <p>এসএসসি কর্নার</p>
+                        <img src="board/ssc.png" alt="">
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <p>এইচএসসি কর্নার</p>
+                        <img src="board/hsc.png" alt="">
+                    </div>
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+            </div>
+    </div>
+    <div class="footer">
+        <div>
+            <h2>Contact Information</h2>
+           <p>Board of Intermediate and Secondary Education, Dhaka</p> 
+            <p>Address: 13-14, Joynag Road, Bakshibazar, Dhaka-1211</p>
+            <p>Email : infobisedhaka@gmail.com</p>
+        </div>
+        <div class="link">
+           <h3>Important Link</h3> 
+           <p>কিশোর বাতায়ন</p>
+           <p>শিক্ষা মন্ত্রণালয়</p>
+           <p>জাতীয় ই-তথ্যকোষ</p>
+           <p>BANBEIS</p>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright 2024 @ <span>BISE, DHAKA</span>  All Rights Reserved.</p>
+    </div>
+    </div> 
+     <script>
+        let index = 0;
+const intervalTime = 3000; // Time in milliseconds (3 seconds)
+let intervalId;
+
+function showSlide(i) {
+    const slides = document.querySelector('.slides');
+    const slideCount = document.querySelectorAll('.slides img').length;
+    if (i >= slideCount) index = 0;
+    if (i < 0) index = slideCount - 1;
+    slides.style.transform = `translateX(${-index * 100}%)`;
+}
+
+function nextSlide() {
+    index++;
+    showSlide(index);
+}
+
+function prevSlide() {
+    index--;
+    showSlide(index);
+}
+
+// Initialize the first slide
+showSlide(index);
+
+// Set up autoplay
+function startAutoplay() {
+    intervalId = setInterval(nextSlide, intervalTime);
+}
+
+// Stop autoplay
+function stopAutoplay() {
+    clearInterval(intervalId);
+}
+
+// Start autoplay when the page loads
+startAutoplay();
+
+// Optional: Restart autoplay when user interacts with the slider
+document.querySelector('.slider').addEventListener('mouseover', stopAutoplay);
+document.querySelector('.slider').addEventListener('mouseout', startAutoplay);
+</script>
+</body>
+</html>
